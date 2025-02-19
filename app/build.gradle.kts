@@ -14,9 +14,10 @@ android {
         versionName = "1.0"
 
     }
-    buildFeatures {
-        dataBinding = true
+    dataBinding{
+        enable=true
     }
+
 
     buildTypes {
         release {
@@ -49,6 +50,5 @@ dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation("androidx.leanback:leanback:1.1.0-alpha01")
-    implementation("androidx.leanback:leanback-preference:1.1.0")
     implementation("androidx.constraintlayout:constraintlayout:2.2.0-alpha01")
 }
